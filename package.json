@@ -1,0 +1,52 @@
+{
+  "name": "setrobot-front",
+  "version": "1.0.0",
+  "author": "3runo Desing",
+  "homepage": "https://github.com/3runoDesign/setRobot-Front",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/3runoDesign/setRobot-Front.git"
+  },
+  "bugs": {
+    "url": "https://github.com/3runoDesign/setRobot-Front/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "build": "npm install && bower install"
+  },
+  "engines": {
+    "node": ">= 0.12.0",
+    "npm": ">=2.1.5"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "eslint-config-warner": "^1.0.0",
+    "eslint-config-xo": "^0.15.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-pug": "^3.0.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp.spritesmith": "^6.2.1",
+    "jshint": "^2.9.3",
+    "merge-stream": "^1.0.0",
+    "vinyl-buffer": "^1.0.0"
+  }
+}

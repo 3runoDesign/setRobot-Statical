@@ -1,0 +1,26 @@
+{
+  "name": "setrobot-front",
+  "version": "1.0.0",
+  "main": "",
+  "authors": [
+    "Team Artemsite"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/3runoDesign/setRobot-Front",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "^4.2.7",
+    "neat": "^1.7.4",
+    "family.scss": "^1.0.8"
+  },
+  "dependencies": {
+    "slick-carousel": "slick.js#^1.6.0",
+    "jquery-meiomask": "^1.1.14"
+  }
+}
