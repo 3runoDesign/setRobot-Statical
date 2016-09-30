@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp     = require('gulp');
 var scsslint = require('gulp-scss-lint');
 var eslint   = require('gulp-eslint');
