@@ -8,14 +8,14 @@ var gulp     = require('gulp');
 var path     = require('../paths.js');
 
 gulp.task('eslint', function() {
-    return gulp.src(path.to.scripts.source)
-        .pipe(eslint())
-        .pipe(eslint.format());
+  return gulp.src(path.to.scripts.source)
+    .pipe(eslint())
+    .pipe(eslint.format());
 });
 
 gulp.task('scripts', ['eslint'], function() {
-    return gulp.src(path.to.scripts.source)
-       .pipe(concat('main.js'))
-       .pipe(gulp.dest(path.to.scripts.destination))
-       .pipe(connect.reload());
+  return gulp.src(path.to.scripts.source)
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest(path.to.scripts.destination))
+    .pipe(connect.reload());
 });
