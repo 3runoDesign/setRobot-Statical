@@ -34,6 +34,7 @@ module.exports = {
 
     scripts: {
       source: resources + '/scripts/**/*.js',
+      partials: resources + '/scripts/partials/**/*.js',
       main: resources + '/scripts/main.js',
       destination: destination + '/assets/scripts'
     },
