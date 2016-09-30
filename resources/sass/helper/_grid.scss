@@ -1,9 +1,9 @@
-$_class-name-grid : col !default;
+$_class-name-grid: col !default;
 @if global-variable-exists(cg-class-name-grid) { $_class-name-grid: $cg-class-name-grid; }
 
 %min-height-grid {
   min-height: 1px;
-  position: relative
+  position: relative;
 }
 
 %container {
@@ -33,11 +33,11 @@ $_class-name-grid : col !default;
     }
 
     .#{$grid-class-name}-push-#{$outer-col} {
-      left: flex-grid($outer-col, $columns) + flex-gutter($columns)
+      left: flex-grid($outer-col, $columns) + flex-gutter($columns);
     }
 
     .#{$grid-class-name}-pull-#{$outer-col} {
-      right: flex-grid($outer-col, $columns) + flex-gutter($columns)
+      right: flex-grid($outer-col, $columns) + flex-gutter($columns);
     }
   }
 
@@ -49,24 +49,25 @@ $_class-name-grid : col !default;
   }
 }
 
-@mixin create-grid($columns: 12, $grid-general: true, $breakpoint: false, $size_fixed: false, $slug: md) {
+@mixin create-grid($columns: 12, $grid-general: true, $breakpoint: false, $size-fixed: false, $slug: md) {
   @if $breakpoint {
     @include media($breakpoint) {
       @include _creator-grid($columns, $slug);
 
-      @if $size_fixed {
+      @if $size-fixed {
         .container {
-          max-width: $size_fixed;
+          max-width: $size-fixed;
         }
 
         @if $visual-grid {
           body::before {
             @include grid-column-gradient(gradient-stops($columns));
-            max-width: $size_fixed;
+            max-width: $size-fixed;
           }
         }
 
-      } @else {
+      }
+      @else {
         @if $visual-grid {
           body::before {
             @include grid-column-gradient(gradient-stops($columns));
@@ -82,18 +83,32 @@ $_class-name-grid : col !default;
       }
     }
 
-  } @else {
-    html, body { min-width: $max-width; }
+  }
+  @else {
+    html,
+    body {
+      min-width: $max-width;
+    }
 
     @include _creator-grid($columns, $slug);
 
-    .container { max-width: $max-width; }
+    .container {
+      max-width: $max-width;
+    }
   }
 
   @if $grid-general {
-    .row       { @include row(); }
-    .omega     { @include omega(); }
-    .container { @extend %container; }
+    .row       {
+      @include row();
+    }
+
+    .omega     {
+      @include omega();
+    }
+
+    .container {
+      @extend %container;
+    }
   }
 }
 //
