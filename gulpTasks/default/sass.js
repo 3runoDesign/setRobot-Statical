@@ -4,7 +4,6 @@ var gulp      = require('gulp');
 var connect   = require('gulp-connect');
 var sass      = require('gulp-sass');
 var prefix    = require('gulp-autoprefixer');
-var scsslint  = require('gulp-scss-lint');
 var csscomb   = require('gulp-csscomb');
 var path      = require('../paths.js');
 var error     = require('../error-handler.js');
