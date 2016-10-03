@@ -21,7 +21,7 @@ gulp.task('basic-assets', function(callback) {
 
 gulp.task('build-assets', function(callback) {
   if (argv.p === true || argv.production === true) {
-    gulpSequence('clean-all', ['basic-assets'], 'css-min', 'scripts-min', callback);
+    gulpSequence('clean-all', ['basic-assets'], 'css-min', 'scripts-min', 'rev', callback);
   } else {
     gulpSequence('clean-all', ['basic-assets'], callback);
   }

@@ -41,6 +41,7 @@
     "gulp-jshint": "^2.0.1",
     "gulp-livereload": "^3.8.1",
     "gulp-pug": "^3.0.4",
+    "gulp-rev": "^7.1.2",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^2.3.2",
     "gulp-scss-lint": "^0.4.0",
