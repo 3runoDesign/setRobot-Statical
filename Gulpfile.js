@@ -37,3 +37,4 @@ gulp.task('cw', function(callback) {
 
 // Assets Build
 gulp.task('ba', ['build-assets']);
+gulp.task('bs', ['basic-sprite']);
