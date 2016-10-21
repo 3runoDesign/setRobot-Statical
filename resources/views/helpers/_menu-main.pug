@@ -1,0 +1,10 @@
+mixin menuMain(ulCLass, menuItems)
+    ul(class=`${ulCLass}`)
+        for subMenu, item in menuItems
+            li.item
+                a(href=`#${item}`)=item
+                if  subMenu.length > 0
+                    ul.sub-menu
+                        - for (var x = 0; x < subMenu.length; x++)
+                            li.item
+                                a(href=`#${item}-${subMenu[x]}`)=subMenu[x]
