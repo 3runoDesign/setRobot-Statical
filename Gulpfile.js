@@ -16,7 +16,7 @@ gulp.task('basic-sprite', function(callback) {
 });
 
 gulp.task('basic-assets', function(callback) {
-  gulpSequence('providers', 'sass', 'images', 'sprite', ['css-build'], 'scripts', 'fonts', 'pug', callback);
+  gulpSequence('providers', 'sass-prod', 'images', 'sprite', ['css-build'], 'scripts', 'fonts', 'pug', callback);
 });
 
 gulp.task('build-assets', function(callback) {
