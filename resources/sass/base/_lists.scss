@@ -4,6 +4,17 @@ ol {
   margin: 0;
   padding: 0;
 
+  &%inline-list {
+    li {
+      display: inline-block;
+      margin-right: $small-spacing;
+    }
+
+    li:last-of-type {
+      margin-right: 0;
+    }
+  }
+
   &%default-ul {
     list-style-type: disc;
     margin-bottom: $small-spacing;
