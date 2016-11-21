@@ -99,12 +99,12 @@ $ npm run build
 ```
 
 ##Tasks
-- gulp ba: compile all files
-- gulp ba --p: compile all files to production
-- gulp bs: compress image sprite files
-- gulp cw: inicialize a server and watch
-- gulp js-lint: validation JS
-- gulp scss-lint: validation Scss
+- `gulp ba:` compile all files
+- `gulp ba --p`: compile all files to production
+- `gulp bs`: compress image sprite files
+- `gulp cw`: inicialize a server and watch
+- `gulp js-lint`: validation JS
+- `gulp scss-lint`: validation Scss
 
 ##License
 
