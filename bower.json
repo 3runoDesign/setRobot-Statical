@@ -15,9 +15,9 @@
     "tests"
   ],
   "devDependencies": {
-    "bourbon": "^4.2.7",
-    "neat": "^1.7.4",
-    "family.scss": "^1.0.8"
+    "family.scss": "^1.0.8",
+    "bourbon": "^4.3.4",
+    "bootstrap-sass-grid": "^4.0.1"
   },
   "dependencies": {
     "slick-carousel": "slick.js#^1.6.0",
