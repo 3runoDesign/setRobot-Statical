@@ -1,0 +1,23 @@
+.burger-check:checked ~ .nav-wrap {
+  @media (max-width: 767px) {
+    max-height: 500px;
+  }
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    max-height: 500px;
+  }
+}
+
+.burger {
+  float: right;
+  margin-right: 15px;
+  margin-top: 25px;
+
+  @media (max-width: 425px) and (min-width: 375px) {
+    margin-top: 28px;
+  }
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    margin-top: 28px;
+  }
+}
