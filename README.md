@@ -33,3 +33,6 @@ A static website generator/rapid prototyping using Gulp for heavy tasks.
   * Compiles sprites from all files in the `assets/sprite` directory
 * **Revisioning/cache busting**:
   Cache busting static assets for production with [gulp-rev](https://github.com/sindresorhus/gulp-rev)
+  
+# Licensing
+Copyright (c) 2016 - 2017 Bruno Fernando. Licensed under the MIT license(MIT)
