@@ -1,29 +1,43 @@
 doctype html
 html.no-js(lang='pt-BR')
+    block vars
 
-  include ../partials/_head
-  include ../helpers/bemto/bemto
+    include ../partials/_head
+    include ../helpers/_bemto/bemto
 
-  body
+        body(class=bodyClass)
 
-    <!--[if IE 8]>
-      p.browserupgrade
-        | Você está usando um navegador <strong>ultrapassada</strong>.
-        a(href='http://browsehappy.com/')
-          | Atualize o seu navegador para melhorar a sua experiência.
-    <![endif]-->
+            <!--[if IE 8]>
+              p.browserupgrade
+                | Você está usando um navegador <strong>ultrapassada</strong>.
+                a(href='http://browsehappy.com/')
+                  | Atualize o seu navegador para melhorar a sua experiência.
+            <![endif]-->
 
-    main
+            main
 
-      include ../partials/_header
+                include ../partials/_header
 
-      block content
+                block content
 
-      include ../partials/_footer
+                include ../partials/_footer
 
-      script(src='//code.jquery.com/jquery-3.1.1.js', integrity='sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=', crossorigin='anonymous')
+                script(src='//code.jquery.com/jquery-3.1.1.js')
 
-      script(src='/assets/scripts/vendor.js')
-      script(src='/assets/scripts/main.js')
+                script(src='assets/js/vendor.js')
+                script(src='assets/js/main.js')
 
-      block script-page
+                script.
+                    WebFontConfig = {
+                        google: { families: [ 'Lato:400,700' ] }
+                    };
+                    (function() {
+                        var wf = document.createElement('script');
+                        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                        wf.type = 'text/javascript';
+                        wf.async = 'true';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(wf, s);
+                    })();
+
+                block script-page

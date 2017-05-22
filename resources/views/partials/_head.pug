@@ -3,17 +3,26 @@ include ../helpers/_menu-main
 
 head
 
-  meta(charset='utf-8')
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
 
-  title setRobot Front
+    block title
+        title #{pageTitle} - setRobot
 
-  meta(http-equiv='x-ua-compatible', content='ie=edge')
-  meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='Description', content='')
 
-  script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
+    meta(name='Keywords', content='')
 
-  link(href='//fonts.googleapis.com/css?family=Lato:400,700', rel='stylesheet', type='text/css')
-  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css')
+    meta(property='og:title', content='')
+    meta(property='og:url', content='')
+    meta(property='og:type', content='website')
+    meta(property='og:site_name', content='')
 
-  link(rel='stylesheet', href='/assets/css/vendor.css')
-  link(rel='stylesheet', href='/assets/css/main.css')
+    link(rel='canonical', href='')
+
+    script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css')
+
+    link(rel='stylesheet', href='assets/css/vendor.css')
+    link(rel='stylesheet', href='assets/css/main.css')
