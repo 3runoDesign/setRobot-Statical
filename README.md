@@ -9,6 +9,13 @@ A static website generator/rapid prototyping using Gulp for heavy tasks.
 * run `gulp` to build the app and start watching!
 * run `gulp build --p` to create a production build
 
+## Tasks
+* `gulp build` #Compilação normal para produção
+* `gulp build --p` #Compilação minificada para produção
+* `gulp build --production` #Compilação minificada para produção
+* `gulp cw` #Tarefas para durante o desenvolvimento
+
+
 ## Features:
 * **Sass/CSS**:
   * Blazing fast Node Sass(libsass) parser
@@ -16,7 +23,7 @@ A static website generator/rapid prototyping using Gulp for heavy tasks.
   * CSS minifying with [cssnano](http://cssnano.co/)
   * CSS code beautiful [csscomb](http://csscomb.com/)
 * **Javascript**:
-  * Browserify
+  * [Rigger](https://github.com/kuzyk/gulp-rigger)
 * **Templating**:
   * [Pug templating language](https://pugjs.org) with partials support
 * **Development**:
