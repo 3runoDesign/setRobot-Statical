@@ -1,4 +1,4 @@
-# SetRobot Statical site generator
+# [Depreciated] SetRobot Statical site generator
 A static website generator/rapid prototyping using Gulp for heavy tasks.
 
 ## Requirements:
